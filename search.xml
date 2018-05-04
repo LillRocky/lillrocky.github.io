@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[用hexo搭建自己的个人博客]]></title>
+    <url>%2F2018%2F05%2F02%2F%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[宝剑锋从磨砺出，梅花香自苦寒来。 《警世贤文·勤奋篇》 引言从开始从事前端开发，一直就想搭建一个属于自己的博客。但由于各种原因，最后都不了了之。最近有了点空闲时间，于是参照着网上的教程，搭建了自己的博客。过程中也遇到了一些问题，有些问题自己还没找到答案。现在把自己在搭建过程中的一些经验和问题总结如下： 环境准备 安装Hexo 配置Hexo 将Hexo部署到github page上 发表文章 使用Next主题 1.环境准备1.1 注册github账号由于咱们的博客最后要发布到github上，所以你首先得有一个github帐号注册地址 1.2 安装Git Bash由于我用的windows，所以安装的是windows版本，下载地址如下：下载地址安装没什么好讲的，一路next就ok安装好之后，可以通过鼠标右键-&gt;Git Bash Here 打开gitbash,如图：打开窗口后，你可以通过git version命令来查看当前安装的版本，如图可以看到，我安装的是2.16.2版本 Git是目前世界上最先进的分布式版本控制系统（没有之一）。如果你对于git不了解，请前去廖雪峰大大的博客学习他的git教程 1.3 安装NodeJs下载地址(LTS为长期支持版，或者说稳定版，Current为最新版)Hexo是基于nodeJs环境的静态博客，依赖于npm工具，请务必安装NodeJs。建议安装LTS版本安装过程仍然时一路next，唯一需要注意的是：在Custom Setup这一步记得选 Add to PATH ,这样你就不用自己去配置电脑上环境变量了。然后在cmd命令窗口下输入node -v命令，如果能看到类似与下图的内容，证明你安装正确，可以进行下一步了至此，我们的环境准备就完成了。现在，让我们开始Hexo吧！ 2.安装HexoHexo的安装很简单，我们先创建一个文件夹blog，来存放所有我们博客的东西。创建好文件夹后，我们打开这个文件夹并在空白处按住shift单击鼠标右键，然后我们能看到下图红框所示单击在此处打开命令窗口，我们进入cmd命令行然后我们用npm全局安装 Hexo，命令如下：1npm i hexo -g 安装完成后，可以通过hexo -v命令来查看版本 接下来，我们初始化自己的hexo博客文件，命令hexo init一切顺利的话，在blog文件夹下，可以看到如下文件 简单注释一下： node_modules npm下载的相关依赖包，public 存放最后生成的我们博客的静态文件scaffolds 生成md文档的模板文件scripts 这个文件夹不是自动生成的，是我个人写的一个脚本文件source 这个文件夹中的文件是生成public中文件的源文件themes 主题文件夹.gitignore 上传到git时需要忽略的文件_config.yml 博客的站点配置文件db.json 自动生成的db文件package.json npm的包管理文件其他未注释的文件不用管 3.初探Hexo现在我们已经完成了Hexo的安装，先来小小的使用一下，在cmd命令行中依次执行以下命令：123hexo clean //清理public文件夹hexo g //在public文件夹生成静态文件hexo s //开启本地服务器 在你的浏览器中输入localhost:4000，你就应该能看到自己的博客了如果你看不到这个页面，可能是你的4000端口已经被占用了，将上面最后一行命令修改为：1hexo s -p 4001 4.部署Hexo现在我们已经让我们的博客在自己的本地运行起来了，但是，博客是用来分享的，只有自己能看到是不行的。因此，我们要把它发布到网络上，让其他人能够看到。这里我们选择发布到github的gh-pages。原因当然是因为这是 免费的。 4.1 创建repo并开启gh-pages登录你之前注册的github账户，按图操作 接下来打开你的gitbash（见上文1.2），配置github信息（yourname和youremail都替换成你自己的） 接下来在gitbash中输入 连续回车，直到生成自己的ssh信息，然后在C:\Users\你的用户名\.ssh文件夹中找到id_rsa.pub文件，在记事本中打开，复制所有文件内容然后登录github 4.2 发布博客到gh-pages5.发表文章6.使用Next主题]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[第一篇博文]]></title>
+    <url>%2F2018%2F04%2F28%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87%2F</url>
+    <content type="text"><![CDATA[人的一切痛苦，本质上都是对自己的无能的愤怒 王小波一直想要开一个自己的博客，但又觉得自己才疏学浅，难堪大用，写博客这种事完全就是误人子弟，所以就不了了之了嗯，为自己的懒癌找了个完美的借口。最近新换了工作，新的开始。嗯，最重要是我的懒癌最近懒的找我麻烦。所以，给自己搭了个小博客，希望自己能够坚持住。嗯，加油！我是最胖棒的！ 一起来写博客吧！]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+  </entry>
+</search>

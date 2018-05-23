@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python学习笔记--基本的输入输出和循环]]></title>
+    <url>%2F2018%2F05%2F23%2FPython%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E5%92%8C%E5%BE%AA%E7%8E%AF%2F</url>
+    <content type="text"><![CDATA[输入输出输入input()在Python中，函数input()让程序暂停运行，等待用户输入一些信息，获取用户输入后，将其保存中一个变量中。注意： 函数input接受一个参数，参数内容为要向用户显示的提示或说明。通常为字符串。使用函数input()时，Python将用户的输入解读为字符串，若要解释为其他类型时，需要使用指定的转换函数。 int() 转换为数值类型% 求模运算符 将两个数相除并返回余数 输出print()在Python中，函数print()让程序在控制台中打印一段内容。通常为字符串。如果为非字符串的变量，则会调用其toString方法。 循环while循环while循环不断运行，直到指定的条件不满足为止。 while循环通常会指定一个特殊的标志，当标志满足某个条件时，停止循环的运行除了指定退出循环的标志，还可以用关键字break来退出循环continue，continue关键字不会像break那样直接退出整个循环，它会结束当前循环，并开始下一个循环。每个while循环都必须有停止运行的途径，以免出现死循环。可以使用while循环来循环列表或者根据用户输入生产字典。]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>输入输出</tag>
+        <tag>循环</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Python学习笔记--字典]]></title>
     <url>%2F2018%2F05%2F17%2FPython%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%AD%97%E5%85%B8%2F</url>
     <content type="text"><![CDATA[字典在Python中，字典是一系列键-值对。类似于JS中的对象。 增删改查增加dict[‘key’] = value 删除del dict[‘key’] 修改dict[‘key’] = new_value 查询dict[‘key’] 遍历字典遍历字典中的键值对12for key, value in dict.items(): do something with key and value 方法items()返回一个键-值对的列表 仅遍历字典中的键12for key in dict.keys(): do something with key 方法keys返回一个键的列表 按顺序遍历字典中所有的键12for key in sorted(dict.keys()): do something with key 对keys()方法返回的列表进行排序 遍历字典中所有的值12for key in dict.values(): do something with key 方法values返回一个值的列表 字典与列表的嵌套有时候，为了复杂的需求，需要将一系列字典存储中列表中，或者将列表作为值存储中字典中，称为嵌套。同时，字典也可以嵌套在字典中，列表也可以嵌套中列表中。]]></content>
@@ -10,6 +23,7 @@
       <tags>
         <tag>Python</tag>
         <tag>学习</tag>
+        <tag>字典</tag>
       </tags>
   </entry>
   <entry>
@@ -22,6 +36,7 @@
       <tags>
         <tag>Python</tag>
         <tag>笔记</tag>
+        <tag>列表</tag>
       </tags>
   </entry>
   <entry>
